@@ -25,8 +25,8 @@ var config = {
     colors: true,
     historyApiFallback: true,
     inline: true
-  },
-}
+  }
+};
 
 /*
  * If bundling for production, optimize output
@@ -40,6 +40,6 @@ if (process.env.NODE_ENV === 'production') {
       'process.env': {NODE_ENV: JSON.stringify('production')}
     })
   ];
-};
+}
 
 module.exports = config;
